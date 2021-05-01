@@ -32,13 +32,13 @@
 
 ### 파일 구성
 
-<img width="754" alt="스크린샷 2021-04-01 오후 1 14 53" src="https://user-images.githubusercontent.com/79993356/113243462-07765780-92ee-11eb-8d88-ef3d2fe978ff.png">
+![스크린샷 2021-05-01 오후 10 42 39](https://user-images.githubusercontent.com/79993356/116784334-aef1d000-aace-11eb-9ec1-e5cae465953f.png)
 
-이런 식으로 되어 있으며, 사진의 README는 간단한 프로젝트 소개를 담을 예정입니다.
+
+이런 식으로 되어 있으며, 사진의 README에 전체적인 문제를 정리합니다.
 
 Contributor에서 각자의 폴더 안에 자신의 문제를 정리합니다.
 
-ProblemList가 협업자들이 같이 문제를 올리는 곳입니다.
 
 <br>
 
@@ -48,7 +48,7 @@ ProblemList가 협업자들이 같이 문제를 올리는 곳입니다.
 
 2. 그 중 2문제를 추출해 ShareProblem에 업로드합니다.
 
-3. 자신이 업로드한 6문제를 ProblemList폴더에 테마 및 난이도에 맞게 붙여 넣습니다.
+3. 자신이 업로드한 6문제를 프로젝트 README에 붙여넣습니다.
 
 4. 다른 이가 공유한 문제를 풀어보고 자신의 노트에 추가합니다.
 
