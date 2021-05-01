@@ -4,16 +4,15 @@
 <br>
 
 ### 문제의 순서
-<b>ProblemList</b> 폴더로 들어가서 풀어보세요! 테마 별로 풀어볼 수도 있습니다.
 
 <br>
-
 
 <b>Basic ➤ Method ➤ If & switch ➤ Continue And Break ➤ For and While ➤ Function ➤ String ➤ Object ➤ array ➤ This ➤ Promise</b>
 
 <br>
 
 ### 문제는 어디서 왔는가
+
 프론트 엔드 입문 공부를 하려고 한 학생들..
 
 코딩테스트 대비 문제는 많은데... Javscipt 개념을 공부할 만한 문제가 너무 없다!
