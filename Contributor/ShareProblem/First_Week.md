@@ -4,7 +4,7 @@
 
 ## Keinn51
 
-\### 🎁 If & Switch
+### 🎁 If & Switch
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-\### 난이도 : 🌶
+### 난이도 : 🌶
 
 
 
@@ -20,11 +20,11 @@
 
 
 
-\#### ☁︎ 프롬프트(prompt) 대화상자를 이용해 간이 로그인 창을 구현해보세요
+#### ☁︎ 프롬프트(prompt) 대화상자를 이용해 간이 로그인 창을 구현해보세요
 
 
 
-\```javascript
+```javascript
 
 
 
@@ -64,7 +64,7 @@
 
 
 
-\```
+```
 
 
 
@@ -73,8 +73,7 @@
 <p>
 
 
-
-\```javasript
+```javasript
 
 let Admin = prompt(`who's there?`);
 
@@ -116,7 +115,7 @@ else {
 
 }
 
-\```
+```
 
 
 
@@ -130,7 +129,7 @@ else {
 
 
 
-\### 🎁 For And While
+### 🎁 For And While
 
 
 
@@ -138,7 +137,7 @@ else {
 
 
 
-\### 난이도 : 🌶
+### 난이도 : 🌶
 
 
 
@@ -146,13 +145,13 @@ else {
 
 
 
-\#### ☁︎ for문 계산
+#### ☁︎ for문 계산
 
 
 
 
 
- \```javascript
+ ```javascript
 
 
 
@@ -176,7 +175,7 @@ console.log(a+b);
 
 
 
-\````
+````
 
 
 
@@ -192,7 +191,7 @@ console.log(a+b);
 
 
 
-\```javascript
+```javascript
 
 16
 
@@ -200,7 +199,7 @@ console.log(a+b);
 
 => a에 1과 3이 더해지고, b=2 이므로 10 + 1 + 3 + 2 = 16
 
-\````
+````
 
 
 
