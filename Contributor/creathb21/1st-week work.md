@@ -789,6 +789,18 @@ console.log(undefined || 2 && 3 && null);    //     null
 
  ```javascript
  
+ while (boolean expression == true or false => true일 경우 실행, false일 경우 실행x) {
+      }
+      Boolean Expression => true를 쓸 떄 주의해야(끝없이, 무한히 반복되서 computer down.). true 값이 주어질 수 있는 조건식을 주어서 그 조건식을 만족할 떄 까지만 돌아가도록 해야함.
+      while (true) {
+        console.log(1)
+      }
+      while (false) {
+        console.log(1)
+      }
+      
+      
+ 
 문제 1 : 
 
 a formula which return true or false란?
@@ -812,7 +824,7 @@ a formula which return true or false란?
 ```javascript
 
 문제 1 :
-
+Boolean Expression
 
 문제 2 :
 
