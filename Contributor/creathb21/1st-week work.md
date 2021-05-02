@@ -677,5 +677,49 @@ alert("해리포터가 아닙니다");
  <br>
  <br>
 
+### 🎁 Conditional operators "?"
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Conditional operators "?"
+
+
+ ```javascript
+ 
+ 문제 1 : 
+
+let i = 1, j = 2;
+
+let whoisbig = ( i > j )? i : j
+
+console.log(whoisbig);
+
+출력값을 적으세요.
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+Answer : 2
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
+
 
 
