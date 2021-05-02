@@ -653,11 +653,8 @@ Harry Potter라고 입력했을 시
 아닐시
 "해리포터가 아닙니다"
 라고 출력될 수 있도록 코드를 짜보세요.
-![캡처](https://user-images.githubusercontent.com/80245801/116802754-61b64280-ab50-11eb-876a-6e85e6759336.PNG)
-
-
 ````
-
+![캡처](https://user-images.githubusercontent.com/80245801/116802754-61b64280-ab50-11eb-876a-6e85e6759336.PNG)
 
 
 <details><summary><b>Answer</b></summary>
