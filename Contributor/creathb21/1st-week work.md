@@ -667,8 +667,9 @@ let name = prompt('Please enter your name', 'Harry Potter');
 console.log(name);
 if (name === 'Harry Potter') {
 alert("해리포터님 환영합니다"); 
-};
-alert("해리포터가 아닙니다"); 
+} else {
+alert("해리포터가 아닙니다");
+}; 
 
 ````
 
