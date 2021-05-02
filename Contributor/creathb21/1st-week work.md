@@ -830,10 +830,10 @@ Boolean Expression
 
 문제 2 :
 
-let i = 1 
+let i = 1;
 while (i =< 100) {
-console.log(i)
-i++
+console.log(i);
+i++;
 }
 
 문제 3 :
