@@ -508,3 +508,177 @@ console.log(d);
  </details>
  <br>
  <br>
+
+ ### 🎁  Operators Assignment
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Operators Assignment
+
+
+ ```javascript
+문제 1 : 
+
+let z = 3 + 4 * 5;
+console.log(z);
+
+출력될 값을 작성하세요
+
+
+문제 2 : 
+
+let a, b, c = 10
+console.log(a);
+console.log(b);
+console.log(c);
+출력될 값을 작성하세요
+
+
+문제 3 :
+
+let d, e, f;
+
+d = e = f = 10;
+
+console.log(d);
+console.log(e);
+console.log(4 + ( f = e - 3));
+
+출력될 값을 작성하세요 
+
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+문제 1 : 23
+문제 2 : 
+console.log(a);   // undefined  
+console.log(b);   // undefined
+console.log(c);   // 10 
+문제 3 :
+console.log(d); // 10 
+console.log(e); // 10
+console.log(4 + ( f = e - 3));  // 11
+
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
+### 🎁  Operators Assignment
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Operators Assignment
+
+
+ ```javascript
+문제 1 : 
+
+A. console.log('a' > 2)
+B. console.log('2' > 1)
+C. console.log('A' > 'a')
+D. console.log(0 == false)
+E. console.log(1 > 2
+F. console.log(true == 1)
+G. console.log(0 == 'a')
+H. console.log('abc' > 'acb')
+
+결과는 나오지만 지양해야할 식과 아닌식을 분류하고 화면에 출력하는 값을 적으세요.
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+A. console.log('a' > 2)   //   지양해야,   false
+B. console.log('2' > 1)   //   지양해야,   true
+C. console.log('A' > 'a')  //   지양해야,   false (소문자가 항상 대문자보다 우선순위임)
+D. console.log(0 == false)  //   true 
+E. console.log(1 > 2)   //   false
+F. console.log(true == 1)  //  true 
+G. console.log(0 == 'a')   //   false,   string은 false가 아님
+H. console.log('abc' > 'acb')  //   false
+
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+ 
+ 
+ ### 🎁 Interaction, Conditional operators "if"
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Interaction, Conditional operators "if"
+
+
+ ```javascript
+ 
+ 문제 1 : 
+
+오른쪽에 나타난 그림처럼
+Harry Potter라고 입력했을 시 
+"해리포터님 환영합니다"
+아닐시
+"해리포터가 아닙니다"
+라고 출력될 수 있도록 코드를 짜보세요.
+![캡처](https://user-images.githubusercontent.com/80245801/116802754-61b64280-ab50-11eb-876a-6e85e6759336.PNG)
+
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+let name = prompt('Please enter your name', 'Harry Potter');
+console.log(name);
+if (name === 'Harry Potter') {
+alert("해리포터님 환영합니다"); 
+};
+alert("해리포터가 아닙니다"); 
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
+
