@@ -454,3 +454,57 @@ console.log(counterD);
  </details>
  <br>
  <br>
+
+ ### 🎁  Operators Modify in place
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Operators Modify in place
+
+
+ ```javascript
+
+문제 1 : 
+=, +, -, *, / 
+Operator 들을 우선순위 별로 나열 하세요.
+
+
+문제 2 :
+a = a + 3; === a += 3; 
+
+위 식과 같이 아래 식들을 줄여보세요.
+a = a * 4;
+b = b / 3;
+c = c - 2;
+
+
+
+문제 3 : 
+let d = 7;
+d *= 8 + 9;
+console.log(d);
+출력될 값을 작성하세요 
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+문제 1 : * -> / -> + -> - -> = 
+문제 2 : a *= 4;, b /= 3;, c -= 2;
+문제 3 : 119 
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
