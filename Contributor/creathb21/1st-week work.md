@@ -228,3 +228,217 @@ let dataTypeNull = null;
 </details>
 <br>
 <br>
+
+### 🎁 Type Conversion
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ Type Conversion
+
+
+ ```javascript
+Type Conversion
+Type = 유형
+Conversion = 변형하다 
+String = 문자열
+Number = 숫자
+
+Type Conversion은 데이터의 유형을 변형한다는 뜻 입니다.
+Javascript에서 사용할 수 있는 여러 데이터 유형들, 숫자, 문자열, Boolean 등을 다른 데이터 유형으로 바꿀 수 있습니다.
+숫자 -> 문자열
+문자열 - > 숫자...
+
+let value = 13; 
+console.log(typeof value);
+a라는 변수는 13이라는 숫자 데이터 유형인 값을 가지고 있습니다. 
+이 변수가 가진 데이터 유형을 보려면 typeof 변수이름 을 입력하면됩니다
+결과값으로 number 가 출력됩니다.
+
+우리는 이 13이라는 숫자를 String()함수를 이용해 문자열로 변환시킬 수 있습니다.
+value = String(value) // 데이터 유형을 String()함수를 이용해 String로 변경
+console.log(typeof value); // 13이 숫자가아닌 문자열로 출력됨
+
+반대로 문자열 데이터 유형을가진 값을 숫자로 변형시킬 수 있습니다.
+let str = "123";
+str = (typeof str) // String 출력
+
+let num = Number(str); // 데이터 유형을 Number()함수를 이용해 Number로 변경
+console.log(typeof num); // Number 출력
+
+
+
+문자열 데이터 유형인 "I am"과 숫자 데이터 유형인 13을 더하면 어떻게될까요?
+console.log("I am" + 12)
+I am12 가 출력이 됩니다.
+
+앞 강의에 Variable에서 문자열(string)을 사용할려면 문자열을 " "나 ' '로 묶어줘야한다고 했었습니다, 그 말은 2는 숫자지만, "2"는 문자열이 된다는 뜻입니다.
+
+이번에는 a라는 변수를 5 + "6"로 초기화하여, 출력하면 어떻게될까요?
+let a = 5 + "6";
+console.log(a);
+56이 출력이됩니다.
+
+
+
+
+
+문제 1 :
+let c = 13;
+13이라는 숫자 데이터 유형을 가지고 있는 변수 C가 있습니다.
+이 숫자 13을 문자열로 변형해보세요.
+
+
+문제 2 :
+let something = "1000";
+"1000" 이라는 문자열 데이터 유형을 가지고 있는 변수 something가 있습니다.
+이 문자열을 숫자로 변형해보세요.
+
+문제 3 :
+let b = '12' + '21';
+b를 출력하면 뭐가 나올까요?
+
+문제 4 :
+let d = "I am" + " "  + 12;
+d를 출력하면 뭐가 나올까요?
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+문제1 :
+let c = 13;
+c = String(c)
+console.log(typeof c);  // string 
+
+문제2 : 
+let something = "1000";
+something = Number(something)
+console.log(typeof something);   / number
+
+문제3 : 
+let b = '12' + '21'; 
+console.log(b);    // 1221
+
+문제 4 :
+let d = "I am" + " "  + 12;
+console.log(d);    // I am 12
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+### 🎁 Operators
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ Operators
+
+
+ ```javascript
+
+
+자바스크립트에서는 다양한 연산자(Operators)가 사용되고 있습니다.
+논리 연산자, 비교 연산자, 대입 연산자, 불 연산자..
+
+
+
+Operators : 연산자는 변수나 값의 연산을 위해 사용되는 부호를 칭합니다.
+예시 : 2 + 3 에서 2와 3의 연산을위해 + 연산자가 사용됩니다.
+
+Operands : 피연산자는 연산에 필요한 값을 뜻합니다.
+예시 : 3 + 5 에서 + 연산자를 이용해 피연산자인 3과 5를 더했습니다.
+
+Unary Operator : 연산자가 1개의 피연산자를 가지고있으면 우리는 이 연산자를 Binary Operator라고 부릅니다.
+예시 : -1 , 빼기 연산자는 피연산자인 1을 가지고 있음.
+
+Binary Operator : 연산자가 2개의 피연산자를 가지고있으면 우리는 이 연산자를 Binary Operator라고 부릅니다.
+예시 : 1 + 2 , 더하기 연산자는 피연산자인 1과 2를 가지고 있음.
+
+Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우리는 이 연산자를 Ternary Operator라고 부릅니다
+
+우선 순위(Priority of Operators) : 한 Expression중에 여러개의 연산자가 존재한다면, 어느것을 먼저 계산해야할지 생각해야합니다. 이것을 우리는 연산자의 우선 순위라고 합니다.
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+ 
+ 
+ ### 🎁 Operators
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ Operators
+
+
+ ```javascript
+
+
+자바스크립트에서는 다양한 연산자(Operators)가 사용되고 있습니다.
+논리 연산자, 비교 연산자, 대입 연산자, 불 연산자..
+
+
+
+Operators : 연산자는 변수나 값의 연산을 위해 사용되는 부호를 칭합니다.
+예시 : 2 + 3 에서 2와 3의 연산을위해 + 연산자가 사용됩니다.
+
+Operands : 피연산자는 연산에 필요한 값을 뜻합니다.
+예시 : 3 + 5 에서 + 연산자를 이용해 피연산자인 3과 5를 더했습니다.
+
+Unary Operator : 연산자가 1개의 피연산자를 가지고있으면 우리는 이 연산자를 Unary Operator라고 부릅니다.
+예시 : -1 , 빼기 연산자는 피연산자인 1을 가지고 있음.
+
+Binary Operator : 연산자가 2개의 피연산자를 가지고있으면 우리는 이 연산자를 Binary Operator라고 부릅니다.
+예시 : 1 + 2 , 더하기 연산자는 피연산자인 1과 2를 가지고 있음.
+
+Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우리는 이 연산자를 Ternary Operator라고 부릅니다
+
+우선 순위(Priority of Operators) : 한 Expression중에 여러개의 연산자가 존재한다면, 어느것을 먼저 계산해야할지 생각해야합니다. 이것을 우리는 연산자의 우선 순위라고 합니다.
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
