@@ -664,7 +664,6 @@ Harry Potter라고 입력했을 시
 ```javascript
 
 let name = prompt('Please enter your name', 'Harry Potter');
-console.log(name);
 if (name === 'Harry Potter') {
 alert("해리포터님 환영합니다"); 
 } else {
