@@ -391,7 +391,7 @@ Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우�
  <br>
  
  
- ### 🎁 Operators
+ ### 🎁 Operators Increment Decrement
 
 <br>
 
@@ -399,32 +399,42 @@ Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우�
 
 <br>
 
-#### ☁︎ Operators
+#### ☁︎ Operators Increment Decrement
 
 
  ```javascript
+Increment Opertoar : 증감 연산자
+예시 : a++, ++a, b--, --b 
 
+Remainder : 나머지
+예시 : 100 & 40 = 2 ... 20 나머지
 
-자바스크립트에서는 다양한 연산자(Operators)가 사용되고 있습니다.
-논리 연산자, 비교 연산자, 대입 연산자, 불 연산자..
+Exponentiation : 거듭제곰
+예시 : 2 ** 3 = 8
 
+문제 1 : 
+let a = 5;
+let counterA = ++a * 2;
+console.log(counterA);
+다음은 Increment Operator가 변수 전에 있을 때의 상황입니다. 출력될 값을 작성하세요
 
+문제 2 :
+let b = 25;
+let counterB = b-- * 2;
+console.log(counterB);
+다음은 Increment Operator가 변수 뒤에 있을 때의 상황입니다. 출력될 값을 작성하세요
 
-Operators : 연산자는 변수나 값의 연산을 위해 사용되는 부호를 칭합니다.
-예시 : 2 + 3 에서 2와 3의 연산을위해 + 연산자가 사용됩니다.
+문제 2 : 
+let c = 25
+let counterC = c % 4;
+console.log(counterC);
+다음은 Remainder(나머지) & 를 출력하는 코드입니다. 출력될 값을 작성하세요 
 
-Operands : 피연산자는 연산에 필요한 값을 뜻합니다.
-예시 : 3 + 5 에서 + 연산자를 이용해 피연산자인 3과 5를 더했습니다.
-
-Unary Operator : 연산자가 1개의 피연산자를 가지고있으면 우리는 이 연산자를 Unary Operator라고 부릅니다.
-예시 : -1 , 빼기 연산자는 피연산자인 1을 가지고 있음.
-
-Binary Operator : 연산자가 2개의 피연산자를 가지고있으면 우리는 이 연산자를 Binary Operator라고 부릅니다.
-예시 : 1 + 2 , 더하기 연산자는 피연산자인 1과 2를 가지고 있음.
-
-Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우리는 이 연산자를 Ternary Operator라고 부릅니다
-
-우선 순위(Priority of Operators) : 한 Expression중에 여러개의 연산자가 존재한다면, 어느것을 먼저 계산해야할지 생각해야합니다. 이것을 우리는 연산자의 우선 순위라고 합니다.
+문제 3 : 
+let d = 5;
+let counterD = d ** 2;
+console.log(counterD);
+다음은 Exponentiation ** (거듭제곱)을 사용하는 코드입니다. 출력될 값을 작성하세요.
 
 ````
 
@@ -435,7 +445,9 @@ Ternary Operator : 연산자가 3개의 피연산자를 가지고있으면 우�
   <p>
 
 ```javascript
-
+문제 1 : 12
+문제 2 : 1
+문제 3 : 25
 ````
 
  </p>
