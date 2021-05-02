@@ -850,6 +850,81 @@ for (let i = 100; i >= 1; i--) {
  <br>
 
 
+### 🎁  continue and break
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  continue and break
+
+ ```javascript
+ 
+
+문제 1 : 
+
+for (let i = 0; i < 10; i ++) {
+  if(i % 2) continue;
+  console.log(i);
+}
+
+출력값을 작성하세요.
+
+문제 2 : 
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 0) break;
+  console.log(i);
+}
+
+console.log("I am kicked out!!");
+
+출력값을 작성하세요.
+
+
+문제 3 :
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2) break;
+  console.log(i);
+}
+
+console.log("I am kicked out again!!");
+
+출력값을 작성하세요.
+
+ 
+
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+문제 1 :  0, 2, 4, 6, 8
+
+
+문제 2 :  I am kicked out!!
+
+
+문제 3 : 0, I am kicked out again!!
+
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
 문제 출처 : https://docs.google.com/spreadsheets/d/1YNPM8tD0EcR0RwBnRyWL0DsgVXfax4QvDeoYsRS1ILA/edit#gid=141000431
 
 
