@@ -799,6 +799,8 @@ console.log(undefined || 2 && 3 && null);    //     null
         console.log(1)
       }
       
+     
+for loop => for 문장과 while 문장은 기본적으로 동일한 것이다. 문장 구조만 다른 것.
       
  
 문제 1 : 
@@ -828,8 +830,17 @@ Boolean Expression
 
 문제 2 :
 
+let i = 1 
+while (i =< 100) {
+console.log(i)
+i++
+}
+
 문제 3 :
 
+for (let i = 100; i >= 1; i--) {
+   console.log(i); 
+}
 
 ````
 
