@@ -718,6 +718,113 @@ Answer : 2
  </details>
  <br>
  <br>
+ 
+ ### 🎁 Logical operators
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Logical operators
+
+
+ ```javascript
+ 
+ 0, null, undefined == false 
+ 1, 2, .... == true.
+ 
+ &&로 연결되면, 최초의 False값을 return하거나, 혹은 false값 없으면 제일 마지막 값 return.
+ 
+ ||은 최초의 true값을 return하거나, 없으면, 제일 마지막 false값을 return.
+ 
+ &&의 Priority가 ||보다 높다. 따라서 and 부터 먼저 하고 그 다음에 or을 하게 된다.
+ 
+ 문제 1 : 
+
+console.log(1 || 2 && 3);
+console.log(1 || 0 && 3 || 0);
+console.log(undefined || 2 && 3 || null);
+console.log(3 || 2 && 0);
+console.log(undefined || 2 && 3 && null);
+
+출력값을 적으세요.
+
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+console.log(1 || 2 && 3);     //    1
+console.log(1 || 0 && 3 || 0);     //    1
+console.log(undefined || 2 && 3 || null);    //    3
+console.log(3 || 2 && 0);    //    3
+console.log(undefined || 2 && 3 && null);    //     null 
+
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
+### 🎁  Loops while and for
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎  Loops while and for
+
+
+ ```javascript
+ 
+문제 1 : 
+
+a formula which return true or false란?
+
+문제 2 : 
+
+0부턴 100까지 1씩 증가하는 코드를 while을 써서 작성하세요.
+
+문제 3 :
+
+100부터 1까지 1씩 감소하는 코드를 for을 써서 작성하세요.
+
+````
+
+
+
+<details><summary><b>Answer</b></summary>
+
+  <p>
+
+```javascript
+
+문제 1 :
+
+
+문제 2 :
+
+문제 3 :
+
+
+````
+
+ </p>
+ </details>
+ <br>
+ <br>
 
 
 문제 출처 : https://docs.google.com/spreadsheets/d/1YNPM8tD0EcR0RwBnRyWL0DsgVXfax4QvDeoYsRS1ILA/edit#gid=141000431
