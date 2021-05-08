@@ -7,7 +7,7 @@
 
 <br>
 
-<b>Basic ➤ Method ➤ If & switch ➤ Continue And Break ➤ For and While ➤ Function ➤ String ➤ Object ➤ array ➤ This ➤ Promise</b>
+<b>Basic ➤ Method ➤ If_and_switch ➤ Continue_and_Break ➤ For_and_While ➤ Function ➤ String_and_Object ➤ array ➤ This ➤ Promise</b>
 
 <br>
 
@@ -34,6 +34,10 @@
 <a href="https://www.notion.so/JS-100-94d97d294dd14c9b911a02c840fa9f2d"><b>Notion Java Problem 100</b></a>
 
 = Javascript의 문제(거의 100문제)를 풀어볼 수 있는 페이지. 사회에 공헌하며 미래를 꿈꾸는 아이들 가르치며 소박하게 살고싶다는 저자님이 만드셨다. 좋은 사이트이지만 공부 분야별로 구분되어 있지 않다는 단점이 있다. 
+
+<a href="https://github.com/lydiahallie/javascript-questions/blob/master/ko-KR/README-ko_KR.md">JavaScript 질문 목록</a>
+
+= "초급부터 고급까지: JavaScript를 얼마나 잘 알고 있는지 테스트하거나, 지식을 조금 더 새롭게 하거나, 코딩 면접을 준비하세요!" 라는 취지의 문제 프로젝트. 이번 프로젝트를 만드는 데의 모토가 되었다!
 
 <br>
 
