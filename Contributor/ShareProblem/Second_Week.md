@@ -35,7 +35,7 @@ for (let i = 0; i < 3; i++) {
 
 <a href="https://developer.mozilla.org/ko/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout">개념 참고 사이트1 </a>
 
-<a href=" https://www.bangseongbeom.com/javascript-var-let.html#fn:create-per-iteration-environment">개념 참고 사이트2</a>
+<a href="https://www.bangseongbeom.com/javascript-var-let.html#fn:create-per-iteration-environment">개념 참고 사이트2</a>
 
 <br>
 <b>setTimeout 기본 구문</b>
