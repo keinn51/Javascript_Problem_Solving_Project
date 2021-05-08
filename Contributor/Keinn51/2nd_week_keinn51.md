@@ -73,9 +73,11 @@ for (let i = 0; i < 3; i++) {
 <a href="https://www.bangseongbeom.com/javascript-var-let.html#fn:create-per-iteration-environment">개념 참고 사이트2</a>
 
 <br>
+
 <b>setTimeout 기본 구문</b>
 => window.setTimeout(function, milliseconds);
 => milliseconds후에 function을 호출하겠다!
+
 <br>
 
 첫 번째의 루프 변수 `i`는 `var` 키워드를 사용해 선언되어 있기 때문에, 이 값은 <b>전역 변수</b>가 됩니다.
