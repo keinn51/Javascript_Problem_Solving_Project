@@ -1,28 +1,16 @@
 # 1st Week Problem Sharing
 
-
-
 ## Keinn51
 
 ### 🎁 If & Switch
 
-
-
 <br>
-
-
 
 ### 난이도 : 🌶
 
-
-
 <br>
 
-
-
 #### ☁︎ 프롬프트(prompt) 대화상자를 이용해 간이 로그인 창을 구현해보세요
-
-
 
 ```javascript
 
@@ -30,11 +18,11 @@
 
 
 
-사용자가 "Admin"를 입력하면 비밀번호를 물어보는 프롬프트 대화상자를 띄워주세요. 
+사용자가 "Admin"를 입력하면 비밀번호를 물어보는 프롬프트 대화상자를 띄워주세요.
 
 
 
-이때 아무런 입력도 하지 않거나 Esc를 누르면 "취소되었습니다."라는 메시지를 보여주세요. 
+이때 아무런 입력도 하지 않거나 Esc를 누르면 "취소되었습니다."라는 메시지를 보여주세요.
 
 
 
@@ -66,12 +54,9 @@
 
 ```
 
-
-
 <details><summary><b>Answer</b></summary>
 
 <p>
-
 
 ```javasript
 
@@ -117,8 +102,6 @@ else {
 
 ```
 
-
-
 </p>
 
 </details>
@@ -127,31 +110,17 @@ else {
 
 <br>
 
-
-
 ### 🎁 For And While
 
-
-
 <br>
-
-
 
 ### 난이도 : 🌶
 
-
-
 <br>
-
-
 
 #### ☁︎ for문 계산
 
-
-
-
-
- ```javascript
+```javascript
 
 
 
@@ -167,7 +136,7 @@ var b = 2;
 
 for(var i=1; i<5; i+=2){
 
- a += i;
+a += i;
 
 }
 
@@ -175,21 +144,11 @@ console.log(a+b);
 
 
 
-````
-
-
-
-
-
-
+```
 
 <details><summary><b>Answer</b></summary>
 
-
-
   <p>
-
-
 
 ```javascript
 
@@ -199,9 +158,7 @@ console.log(a+b);
 
 => a에 1과 3이 더해지고, b=2 이므로 10 + 1 + 3 + 2 = 16
 
-````
-
-
+```
 
  </p>
 
@@ -211,32 +168,21 @@ console.log(a+b);
 
  <br>
 
-
 ## joo-ju
 
 ### 🎁 Basic
 
-  
-
 <br>
-
-  
 
 ### 난이도 : 🌶
 
-  
-
-
 #### ☁︎ concat을 활용한 출력방법
-
-  
-  
 
 ```javascript
 
 다음 소스 코드를 완성하여 날짜와 시간을 출력하시오.
 
-  
+
 
 데이터
 
@@ -252,62 +198,58 @@ var minute = '34';
 
 var second = '27';
 
-  
+
 
 var result = //빈칸을 채워주세요
 
-  
+
 
 console.log(result);
 
-  
-  
+
+
 
 출력
 
 2019/04/26 11:34:27
 
-  
-  
 
-````
 
-  
-  
+
+```
 
 <details><summary><b>Answer</b></summary>
 
-  
-
 <p>
 
-  
-
 ```javascript
+var year = "2019";
 
-var year = '2019';
+var month = "04";
 
-var month = '04';
+var day = "26";
 
-var day = '26';
+var hour = "11";
 
-var hour = '11';
+var minute = "34";
 
-var minute = '34';
+var second = "27";
 
-var second = '27';
-
-  
-
-var result = year.concat('/', month, '/', day, ' ', hour, ':', minute, ':', second);
-
-  
+var result = year.concat(
+  "/",
+  month,
+  "/",
+  day,
+  " ",
+  hour,
+  ":",
+  minute,
+  ":",
+  second
+);
 
 console.log(result);
-
-````
-
-  
+```
 
 </p>
 
@@ -319,25 +261,13 @@ console.log(result);
 
 ### 🎁 For_and_While
 
-  
-
 <br>
-
-  
 
 ### 난이도 : 🌶
 
-  
-
 <br>
 
-
-  
-
 #### ☁︎ 별 찍기
-
-  
-  
 
 ```javascript
 
@@ -345,11 +275,11 @@ console.log(result);
 
 하는 수 없이 은비는 프로그래밍으로 트리를 만들기로 합니다.
 
-  
+
 
 은비를 위해 프로그램을 작성해 주세요.
 
-  
+
 
 입력
 
@@ -363,52 +293,32 @@ console.log(result);
 *******
 *********
 
-  
 
-````
 
-  
-  
+```
 
 <details><summary><b>Answer</b></summary>
 
-  
-
 <p>
 
-  
-
 ```javascript
+const n = prompt("숫자를 입력하세요.");
 
-const n = prompt('숫자를 입력하세요.');
+let tree = "";
 
-let tree = '';
+for (let i = 1; i <= n; i++) {
+  let star = "";
 
-  
+  for (let j = 1; j <= n - i; j++) {
+    star += " ";
+  }
 
-for(let i=1; i<=n; i++){
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    star += "*";
+  }
 
-let  star = '';
-
-for(let  j=1; j<=n-i; j++){
-
-star += ' ';
-
+  tree += star + "\n";
 }
 
-for(let k=1; k<=2*i-1; k++){
-
-star += '*';
-
-}
-
-tree += star + '\n';
-
-}
-
-  
 console.log(tree);
-
-````
- 
-
+```
