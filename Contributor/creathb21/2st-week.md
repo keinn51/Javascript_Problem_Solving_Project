@@ -1,5 +1,7 @@
 <Drum Kit> 
 
+```Javascript
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,9 +86,13 @@
 </body>
 </html>
 
+```
+
+
 
 <JS Clock>
 
+```Javascript
 
 <!DOCTYPE html>
 <html lang="en">
@@ -188,9 +194,14 @@
 </body>
 </html>
 
+```
 
 <CSS Variables>
   
+  
+  
+```Javascript
+
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -267,6 +278,9 @@
 
 </body>
 </html>
+
+
+```
 
 
 2주차는 JS 첼린지를 진행해보느라 문제풀이를 많이 못했습니다.
