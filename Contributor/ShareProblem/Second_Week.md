@@ -125,3 +125,75 @@ d는 그대로 4가 나올 것입니다. c의 값을 그대로 복사해와서 d
 
  <br>
  <br>
+
+## dndbekfrl1
+
+### 🎁 Basic
+
+<br>
+
+### 난이도 : 🌶🌶
+
+<br>
+
+#### ☁︎ 1000단위 읽기
+
+```javascript
+숫자 1234567를 1,234,567로 출력하는 코드를 작성하세요.
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+var num = 1234567;
+num = 1234567 + "";
+
+var point = num.length % 3;
+var len = num.length;
+var res = num.subString(0, point);
+
+while (point < len) {
+  if (res != "") str += ",";
+  str += num.subString(point, point + 3);
+  point += 3;
+}
+console.log(res);
+
+또는, num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+```
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+### 🎁 Array
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ set
+
+```javascript
+다음 배열에서 중복 요소를 제거하세요.
+let arr =['🍎', '🍎', '🍋', '🍌', '🍋', '🍇'];
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+let arr = ["🍎", "🍎", "🍋", "🍌", "🍋", "🍇"];
+arr = new Set(arr);
+```
+
+ </p>
+ </details>
+ <br>
+ <br>
