@@ -97,3 +97,14 @@ Commit 양식 예시 : 1st week keinn51
 
 <br>
 
+
+
+#### 대분류 양식
+
+<br>
+
+<b>Basic ➤ Method ➤ Variable ➤ If_and_switch ➤ Continue_and_Break ➤ For_and_While ➤ Function ➤ Object ➤ array ➤ This ➤ Promise</b>
+
+<br>
+
+대분류는 각자 풀어본 문제에서 가장 ‘핵심점’으로 사용되었다고 생각되는 분류로 정합니다.
