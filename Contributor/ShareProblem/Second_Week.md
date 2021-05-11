@@ -152,11 +152,11 @@ num = 1234567 + "";
 
 var point = num.length % 3;
 var len = num.length;
-var res = num.subString(0, point);
+var res = num.substring(0, point);
 
 while (point < len) {
-  if (res != "") str += ",";
-  str += num.subString(point, point + 3);
+  if (res != "") res += ",";
+  res += num.substring(point, point + 3);
   point += 3;
 }
 console.log(res);
