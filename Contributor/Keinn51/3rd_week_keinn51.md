@@ -11,7 +11,7 @@
 ```javascript
 꼭 사이트에 들어가셔서 먼저 풀어보시고 코드 채점 받아보세요!
 
-/*https://programmers.co.kr/learn/courses/30/parts/12077"*/
+https://programmers.co.kr/learn/courses/30/parts/12077"
 
 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
 
@@ -83,6 +83,8 @@ function solution(participant, completion) {
 그러나 위의 식은 반복문을 세 번이나 쓰기 때문에 비효율적인 코딩입니다.  
 반복문을 최대한 줄여 시간 효율적인 코드를 구성해야 하므로 다른 방법을 생각해봅니다.
 
+<br>
+
 ##### 📌 sort를 사용하는 방법
 
 ```javascript
@@ -103,6 +105,8 @@ function solution(participant, completion) {
 
 반복문을 한 번만 사용해 시간을 절약할 수 있습니다.
 
+<br>
+
 ##### 📌 프로그래머스 1티어 풀이
 
 ```javascript
@@ -122,6 +126,8 @@ array도 object이기 때문에, key-value로 이루어진 쌍을 받을 수 있
 value값이 없었다면 0 + 1 을 통해 value값이 1이 됩니다.
 그 결과의 예를 들면 ['cake', 'ball', 'sauce', 'cake', cake: 2, ball: 1, sauce: 1] 이런 식입니다.
 
+<br>
+
 map이 끝났다면 find로 이어지는데, completion의 요소 중 false가 되는 값을 찾으면 그 값에 !을 붙여 true로 만들어줍니다.  
 그렇다면 completion요소 중에서 false가 나오는 값이 최종 답이 될 것입니다.  
 우리는 평소 false로 칭해지는 값들은 (false, 0, -0, NaN, null, undefined, '')라고 알고 있습니다.
@@ -129,6 +135,8 @@ map이 끝났다면 find로 이어지는데, completion의 요소 중 false가 �
 find(name => 여기에서 부르는 name은 participant 요소들의 name 입니다.
 
 여기서부터는 예를 들어서 설명해봅니다.
+
+<br>
 
 > 동명이인이 없는 경우
 
@@ -209,6 +217,8 @@ array를 slice로 베껴 sort로 정렬시킵니다.
 
 넣어주지 않는다면 유니코드 해석 순서상 80이 9보다 먼저 오는 특이한 상황이 발생합니다.  
 참고 : <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">MDN</a>
+
+<br>
 
 ##### 📌 새로운 개념 풀이
 
@@ -435,69 +445,6 @@ b.a에서 a와 같이 바라보고 있는 참조값 안에 key = a, value = 1 �
 </p>
 </details>
 
-<br>
-<br>
-
-### 🎁 If & Switch
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎ 프롬프트(prompt) 대화상자를 이용해 간이 로그인 창을 구현해보세요
-
-```javascript
-
-
-사용자가 "Admin"를 입력하면 비밀번호를 물어보는 프롬프트 대화상자를 띄워주세요.
-
-이때 아무런 입력도 하지 않거나 Esc를 누르면 "취소되었습니다."라는 메시지를 보여주세요.
-
-틀린 비밀번호를 입력했다면 "인증에 실패하였습니다."라는 메시지를 보여주세요.
-
-비밀번호 확인 절차는 다음과 같습니다.
-
-- 맞는 비밀번호 "TheMaster"를 입력했다면 "환영합니다!"라는 메시지를 보여주세요.
-- 틀린 비밀번호를 입력했다면 "인증에 실패하였습니다."라는 메시지를 보여주세요.
-- 빈 문자열을 입력하거나 입력을 취소했다면 "취소되었습니다."라는 메시지를 보여주세요.
-
-
-중첩 if 블록을 사용하고, 코드 전체의 가독성을 고려해 답안을 작성하세요.
-
-힌트: 프롬프트 창에 아무것도 입력하지 않으면 빈 문자열인 ''가, ESC를 누르면 null이 반환됩니다.
-
-```
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-```javasript
-let Admin = prompt(`who's there?`);
-
-if (Admin == 'Admin') {
-  let Password = prompt('Password?');
-  if (Password == 'TheMaster') {
-    alert('Welcome!');
-  }
-  else if (Password == '' || Password == null) {
-    alert('Cancleled');
-  }
-  else {
-    alert('Wrong Password');
-  }
-}
-else if (Admin == '' || Admin == null) {
-  alert('Cancleled');
-}
-else {
-  alert(`I don't know you`);
-}
-```
-
-</p>
-</details>
 <br>
 <br>
 
