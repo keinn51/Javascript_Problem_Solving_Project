@@ -41,13 +41,16 @@ function solution(s) {
   return result;
 }
 
+isNaN()은 매개변수가 숫자인지 검사하는 함수입니다.
+Number()과 parseInt()도 써보았는데, 개인적으로 isNaN()이 제일 코드짜기 쉬웠습니다!
+
 //다른사람 풀이
 function solution(s) {
   return s.length == 4 || s.length == 6 ? !isNaN(s) : false;
 }
 
 
-isNaN()은 매개변수가 숫자인지 검사하는 함수입니다.
+
 //출처 https://programmers.co.kr/learn/courses/30/lessons/12918
 ```
 
@@ -152,6 +155,8 @@ function solution(arr) {
 
   return result;
 }
+
+배열 result과 arr를 비교하면서 연속되지 않은 값을 push해 주었습니다.
 
 //다른사람 풀이
 function solution(arr) {
