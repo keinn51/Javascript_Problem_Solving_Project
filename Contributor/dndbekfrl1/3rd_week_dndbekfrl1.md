@@ -178,3 +178,116 @@ function solution(arr) {
 
 //출처 https://programmers.co.kr/learn/courses/30/lessons/12906
 ```
+
+### 🎁 Function
+
+<br>
+
+### 난이도 : 🌶🌶
+
+<br>
+
+#### ☁︎ 화살표 함수
+
+```javascript
+다음 함수를 화살표 함수로 변경해보세요.
+
+function ask(question, yes, no){
+  if(confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "동의하십니까?",
+  function(){alert("동의하셨습니다.");},
+  function(){alert("취소 버튼을 누르셨습니다.");}
+);
+
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+ask(
+  "동의하십니까?",
+  ()=>alert("동의하셨습니다.");,
+  ()=>alert("취소 버튼을 누르셨습니다."); )
+
+
+좀 더 간결한 문법으로 표현할 수 있는 화살표 함수에 대해 학습했습니다.
+화살표 함수의 구조는 '()'에서 인자를 받고, '=>'우측의 결과를 반환합니다.
+map(), setInterval()과 같은 함수에서 많이 사용됩니다.
+```
+
+### 🎁 Function
+
+<br>
+
+### 난이도 : 🌶🌶
+
+<br>
+
+#### ☁︎ 화살표 함수2
+
+```javascript
+다음 함수를 화살표 함수로 변경해보세요.
+
+function Person() {
+  this.age = 0;
+
+  setInterval(function growUp() {
+    this.age++;
+  }, 1000);
+}
+
+var p = new Person();
+
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+function Person() {
+  this.age = 0;
+
+  setInterval(() => {
+    this.age++;
+  }, 1000);
+}
+```
+
+### 🎁 Function
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ 재귀함수
+
+```javascript
+재귀함수로 주어진 n번째 피보나치 수를 계산하는 함수를 구현하세요.
+
+function fibo(n){
+
+}
+
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+function fibo(n) {
+  if (n <= 1) {
+    return n;
+  }
+  return fibo(n - 1) + fibo(n - 2);
+}
+```
