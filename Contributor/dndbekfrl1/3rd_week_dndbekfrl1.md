@@ -156,7 +156,7 @@ function solution(arr) {
   return result;
 }
 
-배열 result과 arr를 비교하면서 연속되지 않은 값을 push해 주었습니다.
+배열 result과 arr를 비교하면서 연속되지 않은 값을 result에 push해 주었습니다.
 
 //다른사람 풀이
 function solution(arr) {
