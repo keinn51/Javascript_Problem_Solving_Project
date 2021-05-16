@@ -178,6 +178,10 @@ function solution(arr) {
 
 //출처 https://programmers.co.kr/learn/courses/30/lessons/12906
 ```
+ </p>
+ </details>
+ <br>
+ <br>
 
 ### 🎁 Function
 
@@ -220,6 +224,10 @@ ask(
 화살표 함수의 구조는 '()'에서 인자를 받고, '=>'우측의 결과를 반환합니다.
 map(), setInterval()과 같은 함수에서 많이 사용됩니다.
 ```
+ </p>
+ </details>
+ <br>
+ <br>
 
 ### 🎁 Function
 
@@ -259,6 +267,10 @@ function Person() {
   }, 1000);
 }
 ```
+ </p>
+ </details>
+ <br>
+ <br>
 
 ### 🎁 Function
 
@@ -291,3 +303,7 @@ function fibo(n) {
   return fibo(n - 1) + fibo(n - 2);
 }
 ```
+ </p>
+ </details>
+ <br>
+ <br>
