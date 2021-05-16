@@ -68,10 +68,28 @@ function solution(a,b){
 <p>
 
 ```javascript
->true //'Z'가 'Z'보다 크다.
->false //'H'가 'B'보다 크다.
->true // '2'는 숫자 2로 변환 후 비교 된다.
+//작성한 답
+function solution(a, b) {
+  var result = 0;
+  var start = 0;
+  var finish = 0;
+  if (a > b) {
+    start = b;
+    finish = a;
+  } else {
+    start = a;
+    finish = b;
+  }
 
+  for (var i = start; i <= finish; i++) {
+    result += i;
+  }
+  return result;
+}
+//best 답
+function solution(x) {
+  return ((a + b) * (Math.abs(b - a) + 1)) / 2;
+}
 ```
 
  </p>
