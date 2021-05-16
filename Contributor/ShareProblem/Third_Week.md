@@ -397,8 +397,10 @@ function solution(arr) {
 
 ```javascript
 아래 코드를 평가해 보시기 바랍니다.
+
 const birthday = '18.04.1982';
 const age = someCode(birthday);
+
 위 코드의 상수 birthday는 태어난 날짜 정보를 담고 있습니다.
 age라는 상수는 나이에 관한 값을 담고 있는데 birthday를 조작하여 그 값을 도출합니다.
 (생일을 이용하여 나이를 도출하는 코드는 간결성을 위해 여기선 언급하지 않겠습니다. 이 문제에서 해당 코드가 중요한 역할을 하지 않기도 합니다)
