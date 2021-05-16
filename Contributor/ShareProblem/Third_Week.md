@@ -377,6 +377,11 @@ function solution(arr) {
 //출처 https://programmers.co.kr/learn/courses/30/lessons/12906
 ```
 
+ </p>
+ </details>
+ <br>
+ <br>
+
 # SoozingKIM's Problems
 
 
