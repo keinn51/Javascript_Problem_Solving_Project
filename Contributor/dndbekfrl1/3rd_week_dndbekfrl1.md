@@ -41,11 +41,13 @@ function solution(s) {
   return result;
 }
 
-//best 답
+//다른사람 풀이
 function solution(s) {
   return s.length == 4 || s.length == 6 ? !isNaN(s) : false;
 }
 
+
+isNaN()은 매개변수가 숫자인지 검사하는 함수입니다.
 //출처 https://programmers.co.kr/learn/courses/30/lessons/12918
 ```
 
@@ -94,7 +96,7 @@ function solution(a, b) {
   }
   return result;
 }
-//best 답
+//다른사람 풀이
 function solution(x) {
   return ((a + b) * (Math.abs(b - a) + 1)) / 2;
 }
@@ -118,68 +120,55 @@ function solution(x) {
 #### ☁︎ 일치 연산자
 
 ```javascript
-다음 출력값은 무엇일까요?
-console.log(null==undefined);
-console.log(null===undefined);
-console.log(null==0);
-console.log(undefined ==0);
+배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있습니다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려고 합니다. 단, 배열 arr의 원소들의 순서를 유지해야 합니다.
+(예 arr = [1, 1, 3, 3, 0, 1, 1] 이면 [1, 3, 0, 1] 을 return 합니다. arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.)
 
-```
+function solution(arr){
 
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
->true //null과 undefined는 숫자형으로 변환되어 각각 0, NaN으로 변환
->false
->true
->false //NaN이 피연산자이면 비교 연산자는 항상 false 반환
-
-```
-
- </p>
- </details>
- <br>
- <br>
-
-### 🎁 Basic
-
-<br>
-
-### 난이도 : 🌶🌶
-
-<br>
-
-#### ☁︎ 1000단위 읽기
-
-```javascript
-숫자 1234567를 1,234,567로 출력하는 코드를 작성하세요.
-```
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-var num = 1234567;
-num = 1234567 + "";
-
-var point = num.length % 3;
-var len = num.length;
-var res = num.subString(0, point);
-
-while (point < len) {
-  if (res != "") str += ",";
-  str += num.subString(point, point + 3);
-  point += 3;
 }
-console.log(res);
 
-또는, num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 ```
 
- </p>
- </details>
- <br>
- <br>
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+//작성한 답
+function solution(arr) {
+  var result = [];
+  result.push(arr[0]);
+  len_result = 0;
+  var length = arr.length;
+
+  if (length > 0) {
+    for (var i = 1; i < length; i++) {
+      if (result[len_result] != arr[i]) {
+        len_result += 1;
+        result.push(arr[i]);
+      }
+    }
+  }
+
+  return result;
+}
+
+//다른사람 풀이
+function solution(arr) {
+  return arr.filter((val, index) => val != arr[index + 1]);
+}
+
+function solution(arr) {
+  var answer = [arr[0]];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (answer[answer.length - 1] !== arr[i]) {
+      answer.push(arr[i]);
+    }
+  }
+
+  return answer;
+}
+
+//출처 https://programmers.co.kr/learn/courses/30/lessons/12906
+```
