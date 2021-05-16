@@ -30,7 +30,13 @@ function solution(s) {
   var result = false;
   var length = s.length;
   if (length == 4 || length == 6) {
-    result = isNaN(s) ? false : true;
+    result = true;
+    var tmp = s.split("");
+    tmp.forEach((item) => {
+      if (isNaN(item)) {
+        result = false;
+      }
+    });
   }
   return result;
 }
@@ -39,6 +45,8 @@ function solution(s) {
 function solution(s) {
   return s.length == 4 || s.length == 6 ? !isNaN(s) : false;
 }
+
+//출처 https://programmers.co.kr/learn/courses/30/lessons/12918
 ```
 
  </p>
@@ -90,6 +98,8 @@ function solution(a, b) {
 function solution(x) {
   return ((a + b) * (Math.abs(b - a) + 1)) / 2;
 }
+
+//출처 https://programmers.co.kr/learn/courses/30/lessons/12912
 ```
 
  </p>
@@ -167,76 +177,6 @@ while (point < len) {
 console.log(res);
 
 또는, num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-```
-
- </p>
- </details>
- <br>
- <br>
-
-### 🎁 Basic
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎ 조건부 연산자 '?'
-
-```javascript
-prompt를 통해 age를 입력받고,
-18세 이상이면 접근을 허용하는 코드를 작성하세요.
-(단, 조건부 연산자 '?'를 사용할 것)
-
-let aceessAllowed;
-let age = propmt('나이를 입력해 주세요.','');
-
-```
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-let aceessAllowed;
-let age = propmt("나이를 입력해 주세요.", "");
-
-accessAllowed = age >= 18 ? true : false;
-if (accessAllowed) {
-  console.log("접근을 허용합니다.");
-} else {
-  console.log("접근을 거부합니다.");
-}
-```
-
- </p>
- </details>
- <br>
- <br>
-
-### 🎁 Array
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎ set
-
-```javascript
-다음 배열에서 중복 요소를 제거하세요.
-let arr =['🍎', '🍎', '🍋', '🍌', '🍋', '🍇'];
-```
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-let arr = ["🍎", "🍎", "🍋", "🍌", "🍋", "🍇"];
-arr = new Set(arr);
 ```
 
  </p>
