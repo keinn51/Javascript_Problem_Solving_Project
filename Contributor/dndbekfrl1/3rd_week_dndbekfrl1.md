@@ -112,7 +112,7 @@ function solution(x) {
  <br>
  <br>
 
-### 🎁 Basic
+### 🎁 Array
 
 <br>
 
@@ -120,7 +120,7 @@ function solution(x) {
 
 <br>
 
-#### ☁︎ 일치 연산자
+#### ☁︎ 같은 숫자는 싫어
 
 ```javascript
 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있습니다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려고 합니다. 단, 배열 arr의 원소들의 순서를 유지해야 합니다.
@@ -162,6 +162,7 @@ function solution(arr) {
 function solution(arr) {
   return arr.filter((val, index) => val != arr[index + 1]);
 }
+filter를 쓰면 간단하게 구현할 수 있었습니다..!
 
 function solution(arr) {
   var answer = [arr[0]];
