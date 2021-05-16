@@ -71,7 +71,28 @@ console.log(day);
 #### ☁︎  Functions 개념
 
 ```javascript
+문제 1 : 
 
+function myMessage() {
+
+}
+
+위 구조 자체를 Function Declaration 이라고 한다.
+
+이 구조안에
+function head 와 function body가 있는데 이를 다른 말로 작성하세요.
+
+
+문제 2 :
+
+function을 호출한다고 할 때 보통 Call이라고 한다.
+이 외에도 동의어로 2가지를 더 작성하세요.
+
+
+
+문제 3 :
+
+function에서 아무것도 return하지 않을경우 return되는 값을 작성하세요.
 
 
 ```
