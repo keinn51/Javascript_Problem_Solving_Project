@@ -269,6 +269,8 @@ log([1, 2, 3, 4, 5, 6]);
   <p>
 
 ```javascript
+log([1, 2, 3]);   // 1, 2
+log([1, 2, 3, 4, 5, 6]);   // 1, 2
 
 ````
 
@@ -333,6 +335,8 @@ myFn(plusthree,7);
   <p>
 
 ```javascript
+
+13
 
 ````
 
@@ -419,6 +423,27 @@ second();
 
 ```javascript
 
+문제 1 : 
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "You agreed." );
+}
+
+function showCancel() {
+  alert( "You canceled the execution." );
+}
+
+let myFn1 = ask('yes or no?', showOk, showCancel);
+console.log(myFn1)();
+
+
+문제 2 :
+2, 1
+
 ````
 
  </p>
@@ -504,6 +529,17 @@ today();
 
 ```javascript
 
+문제 1 :
+let create = function sayHi() {
+    alert("Hello");
+}
+
+let hb21 = function bar() {
+    	return 3;
+}
+
+문제 2 :
+예
 ````
 
  </p>
@@ -541,6 +577,8 @@ function plus(a, b) {
 <p>
 
 ```javascript
+
+let career = ((a, b) => a + b);
 
 ````
 
