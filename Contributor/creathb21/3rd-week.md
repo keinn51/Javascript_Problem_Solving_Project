@@ -652,7 +652,11 @@ Object는 mutable일지 unmutable을지 생각해보세요.
 <p>
 
 ```javascript
+문제 1 : 
+Structed types
 
+문제 2 :
+ mutable 
 ````
 
  </p>
@@ -722,7 +726,7 @@ console.log(person.firstName + " is " + person.age + " years old.");
 <p>
 
 ```javascript
-
+SeoYeon is 25 years old.
 
 ````
 
@@ -796,6 +800,16 @@ var Pastry = {
 
 ```javascript
 
+function init(type, flavor, levels, price, occasion) {
+  return {
+    type, 
+    flavor, 
+    levels, 
+    price, 
+    occasion, 
+  }
+}
+
 ````
 
  </p>
@@ -859,7 +873,15 @@ for (var i of arr) {
 <p>
 
 ```javascript
+for (var i in arr) {
+   console.log(i); 
+}
+=> 0, 1, 2, foo
 
+for (var i of arr) {
+   console.log(i); 
+}
+=> 3, 5, 7
 ````
 
  </p>
@@ -931,7 +953,7 @@ console.log(copy.a);
 <p>
 
 ```javascript
-
+5
 ````
 
  </p>
