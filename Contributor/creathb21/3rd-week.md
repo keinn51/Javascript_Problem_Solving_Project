@@ -52,6 +52,9 @@ console.log(day);
 
 ```javascript
 
+Sunday
+(현재의 요일이 출력 된다.)
+
 ````
 
  </p>
@@ -102,6 +105,15 @@ function에서 아무것도 return하지 않을경우 return되는 값을 작성
 
 ```javasript
 
+문제 1 : head == parameter == argument,
+body{} == implementation(이행,  실행)
+
+
+문제 2 : Call/implement/execute a function => function을 호출한다.
+
+
+문제 3 :
+undefined가 return된다고 본다.
 
 ```
 
@@ -180,7 +192,7 @@ function someFn(a, b = 2, c) {
 someFn(2,3,4);
 someFn(2,3);
 someFn(2);
-someFn(2,,4);
+someFn(2,4);
 
 
 출력값을 작성하세요.
@@ -194,6 +206,11 @@ someFn(2,,4);
 <p>
 
 ```javascript
+
+someFn(2,3,4);  // 24
+someFn(2,3);   // NaN
+someFn(2);  // NaN
+someFn(2,,4);   // NaN
 
 
 
