@@ -55,39 +55,6 @@ participant: ["mislav", "stanko", "mislav", "ana"] completion : ["stanko", "ana"
 <details><summary><b>Answer</b></summary>
   <p>
 
-##### 📌 array의 method인 filter나 find를 사용, 답은 맞지만 비효율적인 코드.
-
-```javascript
-function solution(participant, completion) {
-  var answer = "";
-
-  for (let i = 0; i < participant.length; i++) {
-    if (
-      // 동명이인이 없는 경우
-      !(
-        typeof completion.find((element) => element == participant[i]) ==
-        "string"
-      )
-    ) {
-      answer = participant[i];
-      return answer;
-    }
-
-    if (
-      // 동명이인의 경우
-      participant.filter((element) => element == participant[i]).length == 2
-    ) {
-      answer = participant[i];
-      return answer;
-    }
-  }
-}
-```
-
-그러나 위의 식은 반복문을 세 번이나 쓰기 때문에 비효율적인 코딩입니다.  
-반복문을 최대한 줄여 시간 효율적인 코드를 구성해야 하므로 다른 방법을 생각해봅니다.
-
-<br>
 
 ##### 📌 sort를 사용하는 방법
 
