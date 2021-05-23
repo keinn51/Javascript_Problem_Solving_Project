@@ -181,7 +181,7 @@ concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출
 <br>
 <br>
 
-### 🎁 ddd
+### 🎁 Class
 
 <br>
 
@@ -189,11 +189,21 @@ concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출
 
 <br>
 
-#### ☁︎ 문제5 :
+#### ☁︎ 문제5 : 게임 캐릭터 클래스 만들기
 
-#####
+##### 다음 소스코드에서 클래스를 작성하여 게임 캐릭터의 능력치와 '파이어볼'이 출력되게 만드시오. (<b>주어진 소스 코드를 수정해선 안됩니다.</b>)
 
 ```javascript
+// 여기에 class를 작성하세요.
+
+ const x = new Wizard(545,210,10);
+ console.log(x.health, x.mana,x.armor);
+ x.attack();
+
+ 출력
+ 545 210 10
+ 파이어볼
+
 
 ```
 
@@ -202,6 +212,20 @@ concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출
 
 ```javascript
 
+class Wizard{
+    constructor(health,mana,armor){
+        this.health = health;
+        this.mana = mana;
+        this.armor = armor;
+    }
+    attack(){
+        console.log('파이어볼');
+    }
+
+}
+
+개념 :
+class
 ```
 
 </p>
@@ -210,7 +234,7 @@ concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출
 <br>
 <br>
 
-### 🎁 ddd
+### 🎁 For_and_While
 
 <br>
 
@@ -218,19 +242,27 @@ concat() 메서드는 매개변수로 전달된 문자열을 메서드를 호출
 
 <br>
 
-#### ☁︎ 문제6
+#### ☁︎ 문제6 : for를 이용한 기본 활용
 
-#####
+##### 1부터 100까지 모두 더하는 Code를 <pass> 부분에 완성하세요. for를 사용해야 합니다.
 
 ```javascript
+let s = 0;
 
+// pass
+
+console.log(s);
 ```
 
 <details><summary><b>Answer</b></summary>
 <p>
 
 ```javascript
+for (let i = 1; i <= 100; i++) {
+  s += i;
+}
 
+console.log(s); // 5050
 ```
 
 </p>
