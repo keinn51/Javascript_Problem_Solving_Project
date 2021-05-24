@@ -224,6 +224,11 @@ let totalJediScore = jediScores.reduce((acc,score)=>{return acc+score;},0);
 
 ```
 
+  </p>
+  </details>
+  <br>
+  <br>
+
 ### 🎁 Array
 
 <br>
@@ -298,3 +303,8 @@ sort()는 문자열 비교 함수이므로 sort()에 정렬순서를 정의해�
 p.s 앞에서 map() filter()를 공부했는데 적용은 아직 어렵네요..
 
 ```
+
+  </p>
+  </details>
+  <br>
+  <br>
