@@ -49,7 +49,23 @@ console.log(student2.name);
 <p>
 
 ```javascript
+let student1 = {
+        name: "Superman",
+        study: "Javascript"
+      }
 
+      let student2 = {};
+
+      for (let key in student1) {
+        student2[key] = student1[key];
+      }
+
+      console.log(student2); // {name: "Superman", study: "Javascript"}
+
+      student2.name = "Birdman";
+
+      console.log(student1.name);   // Superman
+      console.log(student2.name);   // Birdman
 
 ````
 
@@ -158,6 +174,9 @@ console.log(objCopy);
 
 ```javascript
 
+문제 1 : {a: undefined, b: undefined, c: undefined}
+
+문제 2 : {a: 1, b: 2}
 ````
 
  </p>
@@ -322,7 +341,11 @@ function myFunction() {
 <p>
 
 ```javascript
+문제 1 : person.fullName();
 
+문제 2 : undefined
+         
+문제 3 : undefined
 
 
 ````
@@ -388,6 +411,8 @@ birdman['learn']();
 
 ```javascript
 
+superman['learn'](); // I am Superman, I study Javascript basic with Team Jupeter.
+birdman['learn'](); // I am Birdman, I study Javascript basic with Team Jupeter.
 
 ````
 
@@ -455,6 +480,10 @@ console.log(Birdman.skill());
 
 ```javascript
 
+console.log(superman.age);   // 25 
+console.log(wolverine.age);   // 50
+console.log(wolverine.skill());   // I always win
+
 
 ````
 
@@ -476,17 +505,6 @@ console.log(Birdman.skill());
 
 
 ```javascript
-
-
-````
-
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-
 요약 :
 
 한번에 할당하는 것
@@ -517,6 +535,22 @@ var [x, , z] = [1, 2, 3];
 console.log(x, z);
 
 출력 값을 작성하세요.
+
+
+
+````
+
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+
+문제 1 : console.log(x, y);   // 2, 1
+
+문제 2 : console.log(x, z);  // 1, 3
+
 ````
 
  </p>
@@ -567,6 +601,9 @@ console.log(c);
 
 ```javascript
 
+console.log(a);  // a
+console.log(b);   // b
+console.log(c);   // c
 
 ````
 
@@ -589,15 +626,6 @@ console.log(c);
 
 ```javascript
 
-
-````
-
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
 요약 :
 
 ... :배열 중 나머지 것들을 보여주는 것
@@ -638,6 +666,20 @@ test('');
 test(null);
 
 출력 값을 작성하세요.
+
+````
+
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+
+test();  // number
+test(undefined);  // number
+test('');        // string
+test(null);      // number
 
 ````
 
