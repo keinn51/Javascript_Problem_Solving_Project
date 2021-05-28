@@ -101,6 +101,9 @@ let totalJediScore = jediScores.reduce((acc,score)=>{return acc+score;},0);
 
 ```
 
+</p>
+</details>
+
 ### 🎁 Array
 
 <br>
@@ -162,6 +165,9 @@ const items = prompt("입력해주세요.")
 
 console.log(bubble(items));
 ```
+
+</p>
+</details>
 
 ### 🎁 Array
 
@@ -272,6 +278,9 @@ function solution(s) {
 //Math.floor()은 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환한다. 예) Math.floor(5.25) => 5
 ```
 
+</p>
+</details>
+
 ### 🎁 Array
 
 <br>
@@ -347,6 +356,9 @@ p.s 앞에서 map() filter()를 공부했는데 적용은 아직 어렵네요..
 
 ```
 
+</p>
+</details>
+
 ### 🎁 Basic
 
 <br>
@@ -383,3 +395,6 @@ function solution(s) {
 let str = "ksekkset";
 console.log(solution(str));
 ```
+
+</p>
+</details>
