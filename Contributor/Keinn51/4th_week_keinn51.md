@@ -524,7 +524,7 @@ if (login == '직원') {
 
  <details><summary><b>Answer</b></summary>
 
-   <p>
+   <p> 
 
 ```javascript
 let message;
