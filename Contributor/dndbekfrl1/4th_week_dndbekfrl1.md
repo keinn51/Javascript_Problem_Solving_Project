@@ -221,6 +221,9 @@ numbers.sort((a, b) => {
 console.log(numbers[0]);
 ```
 
+</p>
+</details>
+
 ### 🎁 Array
 
 <br>
