@@ -442,4 +442,118 @@ age 역시 대문자 상수로 바꾸는 것이 괜찮은 선택일까요?
  </details>
  <br>
  <br>
+  
+  ## by kuk329
+
+### 🎁 Method
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ 문제1: 몇 번째 행성인가요?
+
+##### 우리 태양계를 이루고 있는 행성은 수성, 금성, 지구, 화성, 목성 , 토성, 천왕성, 해왕성으로 총 8개 입니다.
+
+##### 저희는 우리 태양계의 n번째 행성이 무엇인지 알고싶습니다.
+
+##### 입력으로 행성의 순서를 나타내는 숫자 n이 입력됩니다. 출력으로 그 순서에 해당하는 행성의 이름을 출력해 주세요.
+
+##### 예를들어 1이 입력되면, 첫번째 행성인 수성이 출력됩니다.
+
+```javascript
+입출력;
+입력: 1;
+출력: 수성;
+```
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```javascript
+const planet = ['0','수성','금성','지구','화성','목성','토성','천왕성','해왕성']
+const num = alert('입력(1~8):')
+console.log(planet[Number(num)]);
+
+
+사용된 개념: prompt 함수 & 형변환
+
+->prompt 함수
+브라우저에서 제공하는 함수로 인자는 두개를 받을수 있다.
+ex) result = prompt(title,[default])
+함수가 실행되면 텍스트 메시지와 입력 필드, 확인 및 취소 버튼이 있는 모달창을 띄워준다.
+title 은 사용자에게 보여줄 문자열을 입력하면 된다.
+default 는 입력 필드의 초기값을 넣어주면 되지만 필수는 아니다.
+
+->형변환
+전달받은 값을 적절한 자료형으로 바꾸어주는걸 형 변환(type conversion)이라고 한다.
+문자형으로 변환-String(value) , 숫자형으로 변환-Number(value), 불린형으로 변환-Boolean(value) 가 있다.
+
+
+
+
+```
+
+</p>
+</details>
+
+<br>
+<br>
+  ### 🎁 Method
+
+<br>
+
+### 난이도 : 🌶🌶
+
+<br>
+
+#### ☁︎ 문제3: 로꾸꺼
+
+##### 문장이 입력되면 거꾸로 출력하는 프로그램을 만들어 봅시다.
+
+```javascript
+입출력;
+
+입력: 거꾸로;
+출력: 로꾸거;
+```
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```javascript
+function reverse(str){
+    let newStr="";
+    for(let i = str.length-1; i>=0; i--){
+        newStr+=str[i];
+    }
+    console.log(newStr);
+}
+
+reverse("거꾸로")
+
+사용된 개념: 함수
+자바스크립트 에서는 함수를 선언할때 function 함수이름(매개변수,...){ 수행할 문장들... }
+이렇게 만든다.
+
++ 추가 답변
+const n = prompt('입력하세요.');
+const reverseString = n.split('').reverse().join('');
+console.log(reverseString);
+*split() 메서드는 문자열을 배열로 만들어 반환하고,
+reverse()메서드는 배열의 순서를 반전하며,
+join() 메서드는 원소를 모두 붙여 문자열로 반환한다.
+
+```
+
+</p>
+</details>
+
+<br>
+<br>
+
+  
+  
 
