@@ -1,6 +1,44 @@
+
 ### 🎁 Basic
 
 <br>
+
+#### 진아님 공유문제입니다.
+
+<br>
+
+### 난이도 : 🌶
+
+<br>
+
+#### ☁︎ 문자열 다루기
+
+```javascript
+문자열 s의 길이가 4 또는 6이고, 숫자로만 구성되어있는지 확인하는 solution 함수를 작성하세요.
+(예: 1234는 true이고, a234는 false를 반환합니다.)
+
+function solution(s){
+
+}
+
+```
+
+<details><summary><b>Answer</b></summary>
+
+<p>
+
+```javascript
+function solution(s) {
+  return s.length == 4 || s.length == 6 ? !isNaN(s) : false;
+}
+
+//출처 https://programmers.co.kr/learn/courses/30/lessons/12918
+```
+
+ </p>
+ </details>
+ <br>
+ <br>
 
 #### 수진님 공유문제입니다.
 
@@ -415,46 +453,11 @@ function solution(progresses, speeds) {
 
 ```
 
-### 🎁 Basic
-
-<br>
-
-#### 진아님 공유문제입니다.
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎ 문자열 다루기
-
-```javascript
-문자열 s의 길이가 4 또는 6이고, 숫자로만 구성되어있는지 확인하는 solution 함수를 작성하세요.
-(예: 1234는 true이고, a234는 false를 반환합니다.)
-
-function solution(s){
-
-}
-
-```
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-function solution(s) {
-  return s.length == 4 || s.length == 6 ? !isNaN(s) : false;
-}
-
-//출처 https://programmers.co.kr/learn/courses/30/lessons/12918
-```
-
  </p>
  </details>
  <br>
  <br>
+
 
 ### 🎁 If_and_switch
 
