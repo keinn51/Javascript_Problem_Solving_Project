@@ -159,7 +159,7 @@ completion : ['cake', 'ball', 'sauce']
  <br>
  <br>
 
-#### ☁︎ 배열의 정렬
+#### ☁︎ k번째수
 
 ```javascript
 부분에 배열 내장함수를 이용하여 코드를 입력하고 다음과 같이 출력되게 하세요.
@@ -204,11 +204,7 @@ array: [1, 5, 2, 6, 3, 7, 4] commands: [[2, 5, 3], [4, 4, 1], [1, 7, 3]] return:
 
 ```javascript
 function solution(array, commands) {
-  var answer = [];
-  for (let a of commands) {
-    answer.push(array.slice(a[0] - 1, a[1]).sort((a, b) => a - b)[a[2] - 1]);
-  }
-  return answer;
+  return commands.map((a, i) => array.slice(a[0] - 1, a[1]).sort((a, b) => a - b)[a[2] - 1]);
 }
 ```
 
