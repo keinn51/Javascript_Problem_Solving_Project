@@ -51,48 +51,6 @@ function solution(a, b) {
   <br>
   <br>
   
-  #### ☁︎ 배열에 저장해줘!
-
-```javascript
-아래 조건을 만족하는 함수 sumInput()을 작성해 봅시다.
-
-prompt 창을 띄워 사용자에게 숫자를 입력해 달라고 요청한 후, 입력받은 값들을 배열에 저장합니다.
-숫자가 아닌 값, 혹은 빈 문자열을 입력하거나 ‘Cancel’ 버튼을 누르면 질문을 멈춥니다.
-배열 요소의 합을 계산하고 리턴합니다.
-주의: 숫자 0은 유효한 숫자이므로, 사용자가 0을 입력하더라도 질문이 멈추지 말아야 합니다.
-```
-
- <details><summary><b>Answer</b></summary>
-
-   <p>
-
-```javascript
-function sumInput() {
-  let getarray = [];
-  let sum = 0;
-
-  while (true) {
-
-    let getnumb = prompt('sumInput: Enter the number.');
-    if (getnumb === '' || getnumb === null || !isFinite(getnumb)) { break };
-    getarray.push(+getnumb);
-  };
-
-  for (i = 0; i < getarray.length; i++) {
-    sum += getarray[i];
-  };
-
-
-  return console.log(sum);
-}
-
-sumInput();
-```
-
-  </p>
-  </details>
-  <br>
-  <br>
 
 #### ☁︎ K번째수
 
