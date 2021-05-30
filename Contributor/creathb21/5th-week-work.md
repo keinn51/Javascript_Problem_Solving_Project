@@ -76,6 +76,9 @@ console.log(bar);
 <p>
 
 ```javascript
+ 
+console.log(foo);   //  42
+console.log(bar);   //  true
 
 ````
 
@@ -275,6 +278,35 @@ console.log(otherParams);
 console.log(otherParams2);
 
 
+문제1 : 
+function sumAll(...args) { 
+  let sum = 0;
+
+  for (let arg of args) sum += arg;
+
+  return sum;
+}
+
+console.log( sumAll(1) );
+console.log( sumAll(1, 2) );
+console.log( sumAll(1, 2, 3) );
+
+출력 값을 적으세요.
+
+*/
+
+/*
+
+문제2 :
+
+let arr1 = [1, -2, 3, 4];
+let arr2 = [8, 3, -8, 1];
+
+console.log( Math.max(...arr1, ...arr2) 
+
+출력 값을 적으세요.
+
+
 ````
 
 
@@ -283,6 +315,14 @@ console.log(otherParams2);
 <p>
 
 ```javascript
+문제1 : 
+console.log( sumAll(1) );   // 1
+console.log( sumAll(1, 2) );  // 3
+console.log( sumAll(1, 2, 3) );  // 6
+
+문제2 :
+
+console.log( Math.max(...arr1, ...arr2) // 8
 
 ````
 
@@ -381,6 +421,39 @@ console.log(counter);
 
 ```javascript
 
+
+문제1 :
+
+var counter = 0;
+
+// Function to increment counter
+function add() {
+  var counter = 0; 
+  counter += 2;
+}
+
+add();
+add();
+add();
+
+console.log(counter);   // 0
+
+
+문제2 :
+
+function add() {
+  var counter = 0; 
+  counter += 2;
+  return counter;
+}
+
+add();
+add();
+add();
+
+console.log(counter);  // counter is not defined
+
+
 ````
 
  </p>
@@ -449,40 +522,20 @@ function outerFunction () {
 
 ```javascript
 
-````
+function outerFunction () {
+  const outer = `I'm the outer function!`
 
- </p>
- </details>
- <br>
- <br>
+  function innerFunction() {
+    const inner = `I'm the inner function!`
+    console.log(outer) // I'm the outer function!
+  }
 
-
-
-### 🎁 
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎  
+  console.log(inner) // Error, inner is not defined
+}
 
 
-```javascript
-
-
-
-
-
-````
-
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
+outerFunction();   // inner is not defined
+outerFunction()();   // inner is not defined
 
 ````
 
@@ -490,6 +543,7 @@ function outerFunction () {
  </details>
  <br>
  <br>
+
 
 
 
@@ -584,6 +638,49 @@ console.log( makeCounter()() );
 
 ```javascript
 
+문제 1 :
+
+
+function makeCounter() {
+  let count = 0;
+
+  return function() {
+    let count = 1;
+    return count++;
+  };
+}
+
+let counter1 = makeCounter();
+
+console.log( counter1() );   // 1
+console.log( counter1() );   // 1
+console.log( counter1() );   // 1
+
+let counter2 = makeCounter();
+console.log( counter2() );   // 1
+console.log( counter2() );   // 1
+console.log( counter2() );   // 1
+
+
+문제 2 :
+
+function makeCounter() {
+  let count = 0;
+
+  return function() {
+    return count++;
+  };
+}
+
+console.log( makeCounter()() );   // 0
+console.log( makeCounter()() );   // 0
+console.log( makeCounter()() );  // 0
+console.log( makeCounter()() );  // 0
+console.log( makeCounter()() );   // 0
+
+
+
+
 ````
 
  </p>
@@ -592,100 +689,3 @@ console.log( makeCounter()() );
  <br>
 
 
-
-### 🎁 setTimeout and setInterval
-
-<br>
-
-### 난이도 : 🌶
-
-<br>
-
-#### ☁︎  setTimeout and setInterval
-
-
-```javascript
-
-요약 :
-
-function sayHi() {
-  console.log('Hello');
-}
-sayHi();
-setTimeout(sayHi, 2000); // 2000/1000 = 2초뒤, 일정시간이 지난뒤에 기능 수행
-
----------------------------------------------------------------------------
-
-function sayHi(phrase, who) {
-  console.log( phrase + ', ' + who);
-}
-
-sayHi("Hello", "John"); // Hello, John
-setTimeout(sayHi, 1000, "Hello", "John"); // 1초뒤 Hello, John
-
----------------------------------------------------------------------------
-
-function 형태를 제공
-
-setTimeout(() => console.log('Hello));
-setTimeout(() => console.log('Hello), 1000);
-setTimeout(() => console.log('Hello), 2000);
-
----------------------------------------------------------------------------
-
-굉장히 중요한 코드
-
-
-let timerId = setTimeout(() => console.log("never happens"), 1000);
-
-evaluate란 return값을 만들어 낸다는 뜻이다.
-
----------------------------------------------------------------------------
-
-setTimeout한것을 취소하기
-
-clearTimeout(timerId);
-console.log(timerId);
-
----------------------------------------------------------------------------
-
-// 정해진 시간 간격으로 반본적으로 기능 실행
-let timerId = setInterval(() => console.log('tick'), 1000); // side effects
-
-// 정해진 시간에 기능실행
-setTimeout(() => {
-  clearInterval(timerId);
-  console.log('stop');
-}, 5000)
-
-*/
-
-/*
-문제1 :
-
-5초뒤에 현재시간을 보여주는 코드를 작성하세요.
-*/
-
-
-/*
-문제2 :
-
-3, 6, 9 형식으로 3초마다 출력되게 하고 30이 출력이 되면 중단하게 하는 코드를 작성하세요.
-
-
-
-````
-
-
-<details><summary><b>Answer</b></summary>
-
-<p>
-
-```javascript
-
-````
-
- </p>
- </details>
- <br>
- <br>
