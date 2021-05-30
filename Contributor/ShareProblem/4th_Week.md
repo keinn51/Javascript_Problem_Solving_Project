@@ -309,6 +309,37 @@ p.s 앞에서 map() filter()를 공부했는데 적용은 아직 어렵네요..
   <br>
   <br>
   
+ ### 🎁 If_and_Switch
+ <br>
+
+ ### 난이도 : 🌶 🌶
+ <br>
+ 
+ #### ☁︎ 조건문과 논리 연산자
+ ```javascript
+아래 표현식에서 어떤  alert가 실행될까요? 
+
+if( -1||0 ) alert( 'first');
+if( -1&&0 ) alert( 'second' );
+if(null||-1&&1) alert( 'third' );
+ ````
+ <details><summary><b>Answer</b></summary>
+ <p>
+  
+ ```javascript
+0은 거짓, 다른 숫자는 다 참이다.
+-1 || 0     은 true
+-1 && 0     은 false
+null||true  는 true
+따라서 'first', 'third' 실행됨.
+ ```
+
+ </p>
+ </details>
+ <br>
+ <br>
+
+
   
 ### 🎁 For_and_While
 
