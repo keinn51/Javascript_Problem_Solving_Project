@@ -121,7 +121,7 @@ if(null||-1&&1) alert( 'third' );
 0은 거짓, 다른 숫자는 다 참이다.
 -1 || 0     은 true
 -1 && 0     은 false
-null||true  는 trye
+null||true  는 true
 따라서 'first', 'third' 실행됨.
  ```
 
